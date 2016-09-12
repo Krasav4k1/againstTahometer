@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="againstTah:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/againstTah_jar</output-path>
+    <root id="archive" name="againstTah.jar">
+      <element id="module-output" name="againstTah" />
+      <element id="library" level="project" name="KeyboardHook" />
+    </root>
+  </artifact>
+</component>
