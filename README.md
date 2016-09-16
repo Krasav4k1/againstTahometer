@@ -7,7 +7,7 @@ Server-side:
 - When you run Against Tachometer you see window with switches which control process 
 - When you click on mouse, your mouse starts clicks with interval
 - When you click on keyboard, your keyboard starts press on keys, and she begins to switch between windows
-HotKey:
+## HotKey:
 - When you press Key ENTER begins all functions
 - When you press Key ESC stops all functions
 
