@@ -39,6 +39,18 @@ public class WindowAndProcessInfo4Linux {
         return null;
     }
 
+    public static boolean titeName(){
+        WindowAndProcessInfo4Linux windowAndProcessInfo4Linux = new WindowAndProcessInfo4Linux();
+        String winId = windowAndProcessInfo4Linux.execShellCmd(WIN_ID_CMD);
+        String winInfoMcd = windowAndProcessInfo4Linux.windowInfoCmd(winId);
+        String windowTitle = windowAndProcessInfo4Linux.execShellCmd(winInfoMcd);
+        if(windowTitle.equals("Desktop") || windowTitle.equals("UnTahometer")){
+            return false;
+        }else {
+            return true;
+        }
+    }
+
     public static void main(String[] args) throws InterruptedException, AWTException, IOException {
     WindowAndProcessInfo4Linux windowAndProcessInfo4Linux = new WindowAndProcessInfo4Linux();
     while (true){
@@ -48,7 +60,6 @@ public class WindowAndProcessInfo4Linux {
         System.out.println(windowTitle);
         Thread.sleep(1000);
     }
-
 
 //        while (true){
 //            Runtime.getRuntime().exec("xset dpms force off");

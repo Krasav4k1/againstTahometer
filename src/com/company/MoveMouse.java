@@ -42,11 +42,11 @@ public class MoveMouse {
 
 //                        Panel.robot.mouseMove(x, y);
 
-                        Panel.robot.mousePress( InputEvent.BUTTON1_MASK );
-                        Panel.robot.mouseRelease( InputEvent.BUTTON1_MASK );
+                        Panel.robot.mousePress(InputEvent.BUTTON1_MASK);
+                        Panel.robot.mouseRelease(InputEvent.BUTTON1_MASK);
 
                         try {
-                            Thread.sleep(1000);
+                            Thread.sleep(3000);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

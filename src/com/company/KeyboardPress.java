@@ -39,7 +39,13 @@ public class KeyboardPress {
                                 robot.keyRelease(KeyEvent.VK_TAB);
                                 robot.keyRelease(KeyEvent.VK_ALT);
                             }
-
+                            Thread.sleep(100);
+                            if(!WindowAndProcessInfo4Linux.titeName()){
+                                robot.keyPress(KeyEvent.VK_ALT);
+                                robot.keyPress(KeyEvent.VK_TAB);
+                                robot.keyRelease(KeyEvent.VK_TAB);
+                                robot.keyRelease(KeyEvent.VK_ALT);
+                            }
 
                             robot.keyPress(KeyEvent.VK_UP);
                             robot.keyRelease(KeyEvent.VK_UP);
@@ -53,7 +59,7 @@ public class KeyboardPress {
 
 
                             try {
-                                Thread.sleep(3000);
+                                Thread.sleep(10000);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
