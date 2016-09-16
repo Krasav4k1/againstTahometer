@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="KeyboardHook">
-    <CLASSES />
-    <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../keyboard_hook-0.3.zip!/KeyboardHook/src/KeyboardHook" />
-    </SOURCES>
-  </library>
-</component>
