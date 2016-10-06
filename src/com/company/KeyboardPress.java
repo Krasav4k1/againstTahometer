@@ -23,9 +23,6 @@ public class KeyboardPress {
 
                             count[0]++;
 
-                            System.out.println(count[0]);
-                            System.out.println((count[0] % 2) == 0);
-
                             if((count[0] % 2) == 0){
                                 robot.keyPress(KeyEvent.VK_CONTROL);
                                 robot.keyPress(KeyEvent.VK_TAB);
@@ -40,9 +37,15 @@ public class KeyboardPress {
                                 robot.keyRelease(KeyEvent.VK_ALT);
                             }
                             Thread.sleep(100);
-                            if(!WindowAndProcessInfo4Linux.titeName()){
+                            while (WindowAndProcessInfo4Linux.titeName()){
                                 robot.keyPress(KeyEvent.VK_ALT);
                                 robot.keyPress(KeyEvent.VK_TAB);
+                                Thread.sleep(10);
+                                robot.keyRelease(KeyEvent.VK_TAB);
+                                robot.keyRelease(KeyEvent.VK_ALT);
+                                robot.keyPress(KeyEvent.VK_ALT);
+                                robot.keyPress(KeyEvent.VK_TAB);
+                                Thread.sleep(10);
                                 robot.keyRelease(KeyEvent.VK_TAB);
                                 robot.keyRelease(KeyEvent.VK_ALT);
                             }

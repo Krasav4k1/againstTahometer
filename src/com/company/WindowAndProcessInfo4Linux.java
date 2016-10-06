@@ -45,9 +45,9 @@ public class WindowAndProcessInfo4Linux {
         String winInfoMcd = windowAndProcessInfo4Linux.windowInfoCmd(winId);
         String windowTitle = windowAndProcessInfo4Linux.execShellCmd(winInfoMcd);
         if(windowTitle.equals("Desktop") || windowTitle.equals("UnTahometer")){
-            return false;
-        }else {
             return true;
+        }else {
+            return false;
         }
     }
 
