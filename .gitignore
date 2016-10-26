@@ -1,5 +1,4 @@
 # .gitignore
 .idea
-out
 src/META-INF
 againstTah.iml
